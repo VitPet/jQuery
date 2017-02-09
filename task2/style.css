@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height: 450px;
+	text-align: center;
+	background-image: url(https://i.stack.imgur.com/7YKUD.jpg); 
+	padding-top: 250px;
+
+}
+.days{
+	display: inline;
+	background-color: white;
+	font-size: 64px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.hours{
+	display: inline;
+	background-color: white;
+	font-size: 64px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.min{
+	display: inline;
+	background-color: white;
+	font-size: 64px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.sec{
+	display: inline;
+	background-color: white;
+	font-size: 64px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.textDays{
+	display: inline;
+	background-color: white;
+  margin:35px;
+  margin-left: 60px;
+	padding: 2px;
+	}
+	.textHours{
+	display: inline;
+	background-color: white;
+	margin: 10px;
+
+	padding: 2px;
+	}
+	.textMinutes{
+	display: inline;
+	background-color: white;
+	margin: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding: 2px;
+	}
+	.textSeconds{
+	display: inline;
+	background-color: white;
+	margin: 20px;
+	margin-right: 50px;
+	margin-left: 5px;
+	padding: 2px;
+	}
+	
