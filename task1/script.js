@@ -25,19 +25,23 @@ function validEmail() {
 }
 
 function validDate() {
-    var isValid = true;
-    var date = $('[name="date"]').val();
-    if (!date.match(/(([0-2]{1}[1-9]{1})|([3]{1}[01]{1}))\.([0]{1}[1-9]{1}|([1]{1}[12]{1}))\.(\d{4})/g)) {
-        alert('Date should be in format dd.mm.yyyy');
-    }
-    return isValid;
+  var isValid = true;
+  var date = $("[name = 'date']").val();
+  var valDate = /^([0-3]{1}[0-1]{1})|([0-2]{1}[0-9]{1})\/([1]{1}[0-2]{1})|([0]{1}[1-9]{1})\/\d{4}$/g;
+
+  if (!date.match(valDate)) {
+    alert('Date should be in format DD/MM/YYYY');
+    isValid = false;
+  }
+  return isValid;
 }
+
 
 function validIP() {
     var isValid = true;
     var ip = $('[name="ip"]').val();
-    var pattern = /^\d+\.\d+\.\d+\.\d+$/g;
-    if(ip.search(pattern) === -1) {
+    var valIP = /^\d+\.\d+\.\d+\.\d+$/g;
+    if(ip.search(valIP) === -1) {
         alert('IP should be in format 0.0.0.0');
     }
     return isValid;
